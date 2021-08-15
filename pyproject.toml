@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "yamltree"
+version = "0.0.0"
+description = "YAML as a file tree (Python/PyYAML)"
+authors = ["Shane R. Spencer <spencersr@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "yamltree", from="src" },
+    { include = "_yamltree_version.py", from="src" },
+]
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["src/_yamltree_version.py"]
+patterns = ["(^version\\s*=\\s*['\"])[^'\"]*(['\"])"]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.0"
+black = "^21.7b0"
+flake8 = "^3.9.2"
+flake8-bandit = "^2.1.2"
+flake8-bugbear = "^21.4.3"
+flake8-eradicate = "^1.1.0"
+flake8-variables-names = "^0.0.4"
+hypothesis = "^6.14.7"
+mypy = "^0.910"
+pre-commit = "^2.14.0"
+pyfakefs = "^4.5.0"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+rope = "^0.19.0"
+tox = "^3.24.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"

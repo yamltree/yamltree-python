@@ -1,0 +1,52 @@
+{
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    72,
+    88,
+    120
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.coverage*": true,
+    "**/.eggs": true,
+    "**/.hypothesis": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.tox": true,
+    "**/.venv": true,
+    "**/*.egg-info": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/__pycache__": true,
+    "**/.coverage": true,
+    "**/.eggs/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hypothesis/**": true,
+    "**/.mypy_cache/**": true,
+    "**/.pytest_cache/**": true,
+    "**/.serverless/**": true,
+    "**/.tox/**": true,
+    "**/.venv/**": true
+  },
+  "python.analysis.indexing": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "remote.autoForwardPorts": false,
+  "remote.autoForwardPortsSource": "output",
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.wrappingColumn": 120
+}
